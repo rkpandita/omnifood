@@ -190,6 +190,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -352,3 +353,104 @@ header {
 .city-feature {
     margin-bottom: 5px;
 }
+
+/* -------------------------------------------- */
+/* ----------------TESTIMONIALS---------------- */
+/* -------------------------------------------- */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+/* Not used class here */
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    /* Made this relative because child (below) is absolute */
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    /* Make sure to make the position of parent (blockquote) relative if this is absolute */
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle; 
+}
+
+/* -------------------------------------------- */
+/* -------------------SIGN UP------------------ */
+/* -------------------------------------------- */
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+}
+
+.plan-price {
+    font-size: 200%;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 50%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+    margin-bottom: 10px;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
