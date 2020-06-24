@@ -9,6 +9,11 @@
 
 /* Small tablet to big tablet: from 767px to 1023px */
 @media only screen and (max-width: 1023px) {
+    .logo {
+        height: 100px;
+        width: auto;
+        margin-top: 15px;
+    }
     body { font-size: 18px; }
     section { padding: 80px 0; }
     .long-copy {
@@ -109,6 +114,9 @@
     }
     h1 { font-size: 120%; }
     h2 { font-size: 100%; }
+    h2:after {
+        margin-top: 15px;
+    }
     .main-nav {
         padding: 0;
         margin-top: 20px;
@@ -141,9 +149,19 @@
     }
     section { padding: 20px 0; } 
     .contact-form { width: 90%; }
-    .social-links {
+    .social-links,
+    .footer-nav {
         margin-top: 10px;
-        float: left;
+        float: none;
+        text-align: center;
     }
+}
 
+/* Landmark phones: from 0 to 480px */    
+@media only screen and (max-height: 400px) {
+    .logo {
+        height: 80px;
+        width: auto;
+        margin-top: 15px;
+    }
 }

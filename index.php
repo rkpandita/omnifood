@@ -254,13 +254,13 @@
                     <blockquote>
                         Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
                         <cite><img src="resources/img/customer-1.jpg" alt="Customer 1">Alberto Duncan</cite>
-                    </blockquote>
+                    </blockquote><br>
                 </div>
                 <div class="col span-1-of-3">
                     <blockquote>
                         Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
                         <cite><img src="resources/img/customer-2.jpg" alt="Customer 2">Joana Silva</cite>
-                    </blockquote>
+                    </blockquote><br>
                 </div>
                 <div class="col span-1-of-3">
                     <blockquote>
@@ -339,12 +339,27 @@
             </div>
         </section>
     
-        <section class="section-form">
+        <section class="section-form" id="form">
             <div class="row">
                 <h2>We are happy to hear from you</h2>
             </div>
             <div class="row">
-                <form method="post" action="#" class="contact-form">
+                <form method="post" action="mailer.php" class="contact-form">
+                    <div class="row">    
+                        
+                        <?php
+                            
+                            if($_GET['success'] == 1) {
+                                echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
+                            } 
+                            
+                            if($_GET['success'] == -1) {
+                                echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again!</div>";
+                            }
+                        
+                        ?>
+                    
+                    </div>
                     <div class="row">
                         <div class="col span-1-of-3">   
                             <label for="name">Name</label>
@@ -425,10 +440,10 @@
             </div>
             <div class="row">
                 <p>
-                    Copyright &copy; 2020 by Omnifood. All rights reserved.
+                    Copyright &copy; 2020 by Omnifood. All rights reserved.<br><br>
+					Created by: <span style="color:#fff;">Raman K Pandita</span>
                 </p>
             </div>
-        
         </footer>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -560,6 +560,23 @@ input[type=checkbox] {
 
 *:focus {outline: none}
 
+.form-messages {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.success {
+    background-color: rgba(37, 229, 37, 0.72);
+}
+
+.error {
+    background-color: rgba(247, 11, 11, 0.73);
+}
 
 /* -------------------------------------------- */
 /* -------------------FOOTER------------------- */
@@ -567,7 +584,7 @@ input[type=checkbox] {
 
 footer {
     background-color: #333;
-    padding: 50px;
+    padding: 30px;
     font-size: 80%;
 }
 
@@ -584,7 +601,7 @@ footer {
 .footer-nav li,
 .social-links li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .footer-nav li:last-child,
