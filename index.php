@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to all."> 
-        
-        <title>Omnifood</title>
+
+        <title>Omnifood - A premium food delivery service application</title>
         
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
@@ -347,16 +347,13 @@
                 <form method="post" action="mailer.php" class="contact-form">
                     <div class="row">    
                         
-                        <?php
-                            
+                        <?php     
                             if($_GET['success'] == 1) {
                                 echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
-                            } 
-                            
+                            }                            
                             if($_GET['success'] == -1) {
                                 echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again!</div>";
-                            }
-                        
+                            }                        
                         ?>
                     
                     </div>
@@ -441,7 +438,7 @@
             <div class="row">
                 <p>
                     Copyright &copy; 2020 by Omnifood. All rights reserved.<br><br>
-					Created by: <span style="color:#fff;">Raman K Pandita</span>
+         	    Developed by: <span style="color:#fff;">Raman K Pandita</span>
                 </p>
             </div>
         </footer>
